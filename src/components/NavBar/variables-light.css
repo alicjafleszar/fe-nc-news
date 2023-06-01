@@ -1,0 +1,16 @@
+@import '../../global-variables.css';
+
+.nav {
+    /* colour styles */
+    --hover-font-colour--nav: var(--myrtle-green);
+    --font-colour--nav: var(--smoky-black);
+    --logo--nav: var(--tomato);
+    --bg-nav-blur: rgba(255, 255, 255, 0.1);
+    --bg: var(--white);
+
+    /* font sizes */
+    --logo--nav--size--b-screen: 2.5rem;
+    --logo--nav--size--s-screen: 2rem;
+    --links--nav--size: 1.5rem;
+    --hamburger-icon--size: 2.5rem;
+}

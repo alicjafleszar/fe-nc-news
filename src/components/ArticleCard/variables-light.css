@@ -1,0 +1,7 @@
+@import './global-variables.css';
+
+.article-card {
+    /* colour styles */
+    --bg-blur: rgba(255, 255, 255, 0.1);
+    --hover-bg: rgba(65, 114, 112, 0.5);
+}

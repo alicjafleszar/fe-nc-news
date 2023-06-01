@@ -1,0 +1,137 @@
+@import './variables-light.css';
+
+nav a {
+    font-size: var(--links--nav--size);
+}
+
+nav a:link,
+nav a:visited,
+nav a:active {
+    text-decoration: none;
+    color: var(--font-colour--nav);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--hover-font-colour--nav);
+}
+
+nav li {
+    list-style: none;
+}
+
+.logo:link,
+.logo:visited,
+.logo:active {
+    color: var(--logo--nav);
+    font-weight: 700;
+}
+
+.logo:hover {
+    color: var(--hover-font-colour--nav);
+}
+
+.logo {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: var(--logo--nav--size--b-screen);
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-nav-blur);
+    backdrop-filter: blur(20px) saturate(160%) contrast(60%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    height: 4.5rem;
+    z-index: 999;
+}
+
+.nav {
+    max-width: 79.5rem;
+    margin: 0 auto;
+    padding: 0 clamp(8px, 4%, 1.5rem);
+}
+
+/* FLEX */
+
+.nav {
+    height: 100%;
+    flex-flow: row;
+    gap: 1.4rem;
+    align-items: center;
+}
+
+.menu__item {
+    flex-flow: row wrap;
+    gap: 1.4rem;
+    align-items: center;
+}
+
+.logo {
+    white-space: nowrap;
+}
+.menu-container {
+    width: 100%;
+}
+
+.menu {
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+
+/* responsive menu */
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: var(--hamburger-icon--size);
+    font-weight: 700;
+    user-select: none;
+}
+
+@media (max-width: 900px) {
+    .logo {
+        font-size: var(--logo--nav--size--s-screen);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+    
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: var(--bg);
+        top: 4.5rem;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu > .menu__item {
+        flex-direction: column;
+    }
+
+    .menu-container--flex {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu.flex, .menu__item.flex, .menu__link {
+        gap: 1.5rem;
+        width: 50vw;
+    }
+}

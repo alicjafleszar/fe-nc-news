@@ -1,0 +1,15 @@
+:root {
+    /* colours */
+    --jet: #312f2f;
+    --smoky-black: #12100E; /* Dark font */
+    --myrtle-green: #2b4f4e; 
+    --tomato: #f05945; 
+    --raisin-black: #272727;
+    --floral-white: #F7F3E9;
+    --white: #ffffff;
+
+    /* font sizes */
+    --h--l: 2.5rem;
+    --h--m: 2rem;
+    --h--s: 1.5rem;
+}

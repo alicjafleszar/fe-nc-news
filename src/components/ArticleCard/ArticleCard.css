@@ -1,0 +1,65 @@
+@import '../../variables-light.css';
+
+.article-card__title {
+    text-transform: uppercase;
+    font-size: var(--h--s);
+}
+
+.grid__item {
+    background-color: rgba(255, 255, 255, 0.7);;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.grid__item > * {
+    padding: 8px;
+}
+
+@media (hover: hover) {
+    .grid__item:hover  {
+        /* background-color: var(--hover-bg); */
+        background-color: rgba(65, 114, 112, 0.5);
+        cursor: pointer;
+    }
+}
+
+.grid__item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img {
+    border-radius: 3px;
+}
+
+.img-top {
+    width: min-content;
+    white-space: nowrap;
+    background-color: var(--bg-blur);
+    backdrop-filter: blur(20px) saturate(160%) contrast(60%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    border-radius: 5px;
+    position: absolute;
+    padding: .5rem;
+}
+
+.date-string {
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.topic-name {
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.author {
+    font-style: italic;
+}
