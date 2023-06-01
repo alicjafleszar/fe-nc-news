@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom"
-import './MainContent.css'
 import ArticlesSection from "../ArticlesSection/ArticlesSection"
 
 const MainContent = () => {
