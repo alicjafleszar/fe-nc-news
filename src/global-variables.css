@@ -1,14 +1,21 @@
 :root {
     /* colours */
     --jet: #312f2f;
+    --jet-light: rgb(49, 47, 47, .2);
     --smoky-black: #12100E; /* Dark font */
     --myrtle-green: #2b4f4e; 
+    --myrtle-green--light: rgb(65, 114, 112, .5); 
+    --verdigris: #5EAAA8; 
+    --verdigris--01: rgb(94, 170, 168, .5);
+    --tiffany-blue: #A3D2CA; 
     --tomato: #f05945; 
+    --tomato-light: rgb(240, 89, 69, .5); 
     --raisin-black: #272727;
     --floral-white: #F7F3E9;
     --white: #ffffff;
 
     /* font sizes */
+    --h--xl: 3rem;
     --h--l: 2.5rem;
     --h--m: 2rem;
     --h--s: 1.5rem;

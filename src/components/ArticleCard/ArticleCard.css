@@ -1,4 +1,4 @@
-@import '../../variables-light.css';
+@import './variables-light.css';
 
 .article-card__title {
     text-transform: uppercase;
@@ -14,13 +14,12 @@
 }
 
 .grid__item > * {
-    padding: 8px;
+    padding: .5rem;
 }
 
 @media (hover: hover) {
     .grid__item:hover  {
-        /* background-color: var(--hover-bg); */
-        background-color: rgba(65, 114, 112, 0.5);
+        background-color: var(--hover-bg);
         cursor: pointer;
     }
 }
