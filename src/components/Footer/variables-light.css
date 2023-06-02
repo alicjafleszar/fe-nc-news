@@ -1,0 +1,12 @@
+@import '../../global-variables.css';
+
+footer {
+    /* colour styles */
+    --footer-bg: var(--tomato);
+    --hover-font-colour--footer: var(--raisin-black);
+    --footer-font: var(--floral-white);
+
+    /* font sizes */
+    --logo--footer--size: 2rem;
+    --links--footer--size: 1.5rem;
+}

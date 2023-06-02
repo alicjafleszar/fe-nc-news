@@ -1,0 +1,5 @@
+@import '../../global-variables.css';
+
+.icon {
+    --icon: var(--myrtle-green);
+}

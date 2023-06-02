@@ -1,0 +1,6 @@
+@import './global-variables.css';
+
+:root {
+    --font-colour: var(--smoky-black);
+    --scrollbar-thumb-colour: var(--jet);
+}

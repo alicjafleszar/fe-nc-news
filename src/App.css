@@ -1,0 +1,28 @@
+@import './variables-light.css';
+
+.App > *:not(nav, footer) {
+    margin: 1.5rem auto;
+    max-width: 79.5rem;
+    padding: 0 clamp(8px, 2%, 1.5rem);
+}
+
+h1,
+h2:not(.article-card h2) {
+    font-variant-caps: all-small-caps;
+}
+
+h1 {
+    font-size: var(--h--l);
+}
+
+h2 {
+    font-size: var(--h--m);
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
