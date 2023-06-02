@@ -19,6 +19,13 @@ h2 {
     font-size: var(--h--m);
 }
 
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: var(--font-colour);
+}
+
 .grid {
     display: grid;
 }
