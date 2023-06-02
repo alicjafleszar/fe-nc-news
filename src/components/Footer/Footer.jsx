@@ -27,10 +27,10 @@ const Footer = () => {
             <div className='contact-info flex__item flex__item--right'>
               <h3>contact</h3>
               <ul>
-                <li>name</li>
-                <li>email</li>
-                <li>github</li>
-                <li>linkedin</li>
+                <li className="footer__link">name</li>
+                <li className="footer__link">email</li>
+                <li className="footer__link">github</li>
+                <li className="footer__link">linkedin</li>
               </ul>
             </div>
         </div>
