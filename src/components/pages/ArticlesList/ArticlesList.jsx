@@ -1,5 +1,5 @@
 import './ArticlesList.css'
-import ArticleCard from '../ArticleCard/ArticleCard'
+import ArticleCard from '../../modules/ArticleCard/ArticleCard'
 import { fetchArticles } from "../../../utils/api"
 import { useEffect, useState } from 'react'
 
