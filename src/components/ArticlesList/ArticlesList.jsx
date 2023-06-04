@@ -1,21 +1,7 @@
 import './ArticlesList.css'
-// import { useEffect, useState } from "react"
-// import { fetchArticles } from "../../api/api"
 import ArticleCard from '../ArticleCard/ArticleCard'
 
 const ArticlesList = ({ articles, isLoading }) => {
-
-  // const [articles, setArticles] = useState([])
-  // const [isLoading, setIsLoading] = useState(false)
-  
-  // useEffect(() => {
-  //   setIsLoading(true)
-  //   fetchArticles()
-  //     .then(articles => {
-  //       setArticles(articles)
-  //       setIsLoading(false)
-  //     })
-  // }, [])
 
   if (isLoading) return  <p className='icon'>·</p>
 
