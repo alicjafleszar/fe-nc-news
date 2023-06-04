@@ -5,7 +5,7 @@ import Header from "./Header/Header"
 
 const Layout = () => {
   const { pathname } = useLocation();
-  console.log(pathname)
+  
   return (
     <>
       <NavBar />
