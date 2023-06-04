@@ -7,7 +7,7 @@ const MainContent = () => {
     <Routes>
       <Route path="/" element={<ArticlesSection />} />
       <Route path="/articles" element={<ArticlesSection />} />
-      <Route path="/:article" element={<SingleArticle />} />
+      <Route path="/articles/:topic/:article_id/:article_title" element={<SingleArticle />} />
     </Routes>
   )
 }

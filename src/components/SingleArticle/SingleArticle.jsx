@@ -6,12 +6,11 @@ import ArticleSection from "../ArticleSection/ArticleSection";
 function SingleArticle() {
   const [isLoading, setIsLoading] = useState(false)
   const [singleArticle, setSingleArticle] = useState({})
-  const { article } = useParams();
-  const articleId = article.split('-').slice(-1)
+  const { article_id } = useParams();
 
   useEffect(() => {
     setIsLoading(true)
-    fetchArticleById(articleId)
+    fetchArticleById(article_id)
         .then(article => {
             setSingleArticle(article)
             setIsLoading(false)

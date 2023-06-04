@@ -5,7 +5,7 @@ import { formatDateString } from "../../utils/utils"
 const ArticleCard = ({ id, title, topic, created_at, article_img_url, author }) => {
   const datePublished = formatDateString(created_at)
   
-  const articlePath = `/${encodeURIComponent(title.toLowerCase().replaceAll(' ', '-'))}-${id}`
+  const articlePath = `/articles/${topic}/${id}/${encodeURIComponent(title.toLowerCase().replaceAll(/[ .]/g, '-'))}`
 
   return (
     <Link className="article-link" to={articlePath}>
