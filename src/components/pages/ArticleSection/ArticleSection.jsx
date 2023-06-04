@@ -1,4 +1,4 @@
-import { formatDateString } from '../../utils/utils'
+import { formatDateString } from '../../../utils/utils'
 import './ArticleSection.css'
 
 function ArticleSection({ singleArticle: { title, author, created_at, article_img_url, body }}) {

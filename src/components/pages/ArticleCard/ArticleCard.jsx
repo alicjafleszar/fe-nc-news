@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import './ArticleCard.css'
-import { formatDateString } from "../../utils/utils"
+import { formatDateString } from "../../../utils/utils"
 
 const ArticleCard = ({ id, title, topic, created_at, article_img_url, author }) => {
   const datePublished = formatDateString(created_at)
