@@ -8,7 +8,7 @@ const ArticleCard = ({ id, title, topic, created_at, article_img_url, author }) 
   const articlePath = `/${encodeURIComponent(title.toLowerCase().replaceAll(' ', '-'))}-${id}`
 
   return (
-    <Link className="article-link" state={{ dateCreated: dateString }} to={articlePath}>
+    <Link className="article-link" to={articlePath}>
       <section className="article-card grid__item">
         <div className='img-container'>
           <img className='img' src={article_img_url} alt={`image for the article "${title}"`} />
