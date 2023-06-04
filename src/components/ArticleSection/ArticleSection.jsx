@@ -12,7 +12,7 @@ function ArticleSection({ singleArticle: { title, author, created_at, article_im
                 <p className='article__author'>{`by ${ author }`}</p>
             </div>
             <div className='flex article__item__container'>
-                <img className='article__img' src={article_img_url || 'https://www.mv-marchtrenk.at/files/images-sys/placeholder-news-full.png'} alt={`An image for article ${title}`} />
+              <img className='article__img' src={article_img_url ? article_img_url : 'https://www.mv-marchtrenk.at/files/images-sys/placeholder-news-full.png'} alt={`An image for article ${title}`} />
               <p className='article__date'>{ datePublished }</p>
             </div>
         </div>
