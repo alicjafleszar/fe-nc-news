@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { fetchArticleById } from "../../api/api";
+import { fetchArticleById } from "../../utils/api";
 import ArticleSection from "../ArticleSection/ArticleSection";
 
 function SingleArticle() {

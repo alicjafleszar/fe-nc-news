@@ -1,6 +1,6 @@
 import './ArticlesList.css'
 import ArticleCard from '../ArticleCard/ArticleCard'
-import { fetchArticles } from "../../api/api"
+import { fetchArticles } from "../../utils/api"
 import { useEffect, useState } from 'react'
 
 const ArticlesList = () => {
