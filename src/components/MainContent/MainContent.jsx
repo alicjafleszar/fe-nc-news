@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom"
-import ArticlesSection from "../ArticlesSection/ArticlesSection"
 import SingleArticle from "../SingleArticle/SingleArticle"
+import ArticlesList from "../ArticlesList/ArticlesList"
 
 const MainContent = () => {
   return (
     <Routes>
-      <Route path="/" element={<ArticlesSection />} />
-      <Route path="/articles" element={<ArticlesSection />} />
+      <Route path="/" element={<ArticlesList />} />
+      <Route path="/articles" element={<ArticlesList />} />
       <Route path="/articles/:topic/:article_id/:article_title" element={<SingleArticle />} />
     </Routes>
   )

@@ -1,3 +1,10 @@
+@import './variables-light.css';
+
+.articles-container > h1, .articles-container > h2 {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
 .articles-grid {
     --grid-column-count: 3;
     --grid-item-min-width: 272px;
