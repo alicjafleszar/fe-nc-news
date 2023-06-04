@@ -17,3 +17,10 @@ export function fetchArticleById(id) {
         .then(res => res.data.article)
         .catch(err => err)
 }
+
+export function fetchComments(id) {
+    return api
+        .get(`/articles/${id}/comments`)
+        .then(res => res.data.comments)
+        .catch(err => err)
+}

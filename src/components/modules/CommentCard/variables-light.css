@@ -1,0 +1,6 @@
+@import '../../../global-variables.css';
+
+.comment-card {
+    --comment-date-color: var(--jet);
+    --comment-card-bg: var(--myrtle-green--light);
+}

@@ -1,0 +1,13 @@
+.comments {
+    margin-top: 4.5rem;
+}
+
+.comments-container {
+    flex-flow: column nowrap;
+    gap: 1.5rem
+}
+
+.comments > h2 {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}

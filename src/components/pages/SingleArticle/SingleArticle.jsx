@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchArticleById } from "../../../utils/api";
-import ArticleSection from "../ArticleSection/ArticleSection";
+import ArticleSection from "../../modules/ArticleSection/ArticleSection";
+import CommentsSection from "../../modules/CommentsSection/CommentsSection";
 
 function SingleArticle() {
   const [isLoading, setIsLoading] = useState(false)
@@ -22,6 +23,7 @@ function SingleArticle() {
   return (
     <main>
         <ArticleSection singleArticle={singleArticle} />
+        <CommentsSection article_id={article_id} comment_count={singleArticle.comment_count} />
     </main>
   )
 }
