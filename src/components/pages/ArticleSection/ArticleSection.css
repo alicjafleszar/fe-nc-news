@@ -1,0 +1,73 @@
+@import './variables-light.css';
+
+.article,
+.main-info {
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+}
+
+.article {
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-header {
+    gap: 1.5rem;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.article__item__container {
+    flex-flow: column nowrap;
+}
+
+.main-info {
+    color: var(--main-article-info--font);
+    justify-content: space-around;
+    align-items: flex-end;
+    left: 0;
+}
+
+.article__title {
+    font-size: var(--h--xl);
+}
+
+.article__author {
+    font-size: var(--h--m);
+    font-style: italic;
+}
+
+.article__date {
+    align-self: flex-end;
+    padding-top: 1rem;
+}
+
+.article__body {
+    max-width: 80%;
+    line-height: 1.8;
+    letter-spacing: .03rem;
+    hyphens: auto;
+}
+
+.article__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 1190px) {
+    .article-header {
+        flex-flow: column nowrap;
+        align-content: center;
+    }
+
+    .article__title {
+        align-self: flex-start;
+    }
+
+    .article__author {
+        align-self: flex-end;
+    }
+}

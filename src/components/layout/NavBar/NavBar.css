@@ -7,8 +7,6 @@ nav a {
 nav a:link,
 nav a:visited,
 nav a:active {
-    text-decoration: none;
-    color: var(--font-colour--nav);
     font-weight: 500;
 }
 
@@ -113,7 +111,7 @@ input[type=checkbox] {
         background-color: var(--bg);
         top: 4.5rem;
         text-align: center;
-        padding: 16px 0;
+        padding: 1rem 0;
     }
 
     input[type=checkbox]:checked ~ .menu {

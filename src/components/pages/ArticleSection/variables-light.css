@@ -1,0 +1,5 @@
+@import '../../../global-variables.css';
+
+.article {
+    --main-article-info--font: var(--smoky-black);
+}

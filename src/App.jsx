@@ -1,10 +1,9 @@
 import './App.css'
 import { Route, Routes, useLocation } from "react-router-dom";
-import NavBar from './components/NavBar/NavBar'
-import Header from './components/Header/Header'
-import MainContent from './components/MainContent/MainContent'
-import Footer from './components/Footer/Footer'
 import { useEffect } from 'react';
+import ArticlesList from './components/pages/ArticlesList/ArticlesList';
+import SingleArticle from './components/pages/SingleArticle/SingleArticle';
+import Layout from './components/layout/Layout';
 
 function App() {
   const { pathname } = useLocation();
@@ -14,12 +13,14 @@ function App() {
   
   return (
     <div className='App'>
-      <NavBar />
+      
       <Routes>
-        <Route path="/" element={<Header />} />
+        <Route path='/' element={<Layout />}>
+          <Route path="" element={<ArticlesList />} />
+          <Route path="articles" element={<ArticlesList />} />
+          <Route path="articles/:topic/:article_id/:article_title" element={<SingleArticle />} />
+        </Route>
       </Routes>
-      <MainContent />
-      <Footer />
     </div>
   )
 }

@@ -10,3 +10,10 @@ export function fetchArticles() {
         .then(res => res.data.articles)
         .catch(err => err)
 }
+
+export function fetchArticleById(id) {
+    return api
+        .get(`/articles/${id}`)
+        .then(res => res.data.article)
+        .catch(err => err)
+}
