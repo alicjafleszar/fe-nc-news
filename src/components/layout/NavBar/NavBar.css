@@ -81,7 +81,7 @@ nav {
 
 /* responsive menu */
 
-input[type=checkbox] {
+input[type=checkbox]#menu_toggle {
     display: none;
 }
 

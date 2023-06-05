@@ -42,3 +42,17 @@
     animation: pulse .5s ease-in-out infinite alternate;
     -webkit-animation: pulse .5s ease-in-out infinite alternate;
 }
+
+.articles-container > h1, .articles-container > h2 {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.filter {
+    flex-flow: column wrap;
+    gap: 1.5rem;
+}
+
+.articles-container__header {
+    justify-content: space-between;
+}

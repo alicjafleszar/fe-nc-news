@@ -4,9 +4,11 @@ const api = axios.create({
     baseURL: 'https://nc-news-yh3k.onrender.com/api/'
 })
 
-export function fetchArticles() {
+export function fetchArticles(queryObj) {
     return api
-        .get('/articles')
+        .get('/articles', {
+            params: queryObj
+        })
         .then(res => res.data.articles)
         .catch(err => err)
 }
@@ -22,5 +24,12 @@ export function fetchComments(id) {
     return api
         .get(`/articles/${id}/comments`)
         .then(res => res.data.comments)
+        .catch(err => err)
+}
+
+export function fetchTopics() {
+    return api
+        .get(`/topics`)
+        .then(res => res.data.topics)
         .catch(err => err)
 }

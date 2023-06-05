@@ -13,10 +13,8 @@ const NavBar = () => {
         {/* menu-container */}
         <div className='menu-container menu-container--flex'>
           {/* hamburger menu */}
-          {/* <div className='hamburger-menu'> */}
-            <input type="checkbox" id="checkbox_toggle" />
-            <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
-          {/* </div> */}
+          <input type="checkbox" id="menu_toggle" />
+          <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
 
           {/* menu */}
           <div className='menu flex'>

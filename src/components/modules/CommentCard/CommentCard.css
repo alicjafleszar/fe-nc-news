@@ -1,7 +1,6 @@
 @import './variables-light.css';
 
 .comment-card {
-    /* border: 1px solid blue; */
     flex-flow: row nowrap;
     gap: .5rem;
 }

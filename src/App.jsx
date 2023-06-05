@@ -18,6 +18,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route path="" element={<ArticlesList />} />
           <Route path="articles" element={<ArticlesList />} />
+          <Route path="articles/:topic" element={<ArticlesList />} />
           <Route path="articles/:topic/:article_id/:article_title" element={<SingleArticle />} />
         </Route>
       </Routes>
