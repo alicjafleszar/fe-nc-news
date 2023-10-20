@@ -1,2 +1,4 @@
 node_modules
 guidelines.md
+# Local Netlify folder
+.netlify
